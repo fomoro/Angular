@@ -6,6 +6,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { AleatorioComponent } from './Componentes/Conectados/aleatorio/aleatorio.component';
+import { ColorComponent } from './Componentes/Conectados/color.component';
+
 import { AcercaDeComponent } from './EjampleNav/acerca-de/acerca-de.component';
 import { ListaDeLibrosComponent } from './EjampleNav/lista-de-libros/lista-de-libros.component';
 import { EncabezadoComponent } from './EjampleNav/encabezado/encabezado.component';
@@ -14,10 +17,14 @@ import { Error404Component } from './EjampleNav/error404/error404.component';
 import { DetallesComponent } from './EjampleNav/detalles/detalles.component';
 
 import { HeroesModule } from './ModuloHeroes/heroes.module';
+import { DbzModule } from './dbz/dbz.module';
+
 
 @NgModule({
   declarations: [ 
-    AppComponent,   
+    AppComponent,  
+    AleatorioComponent, 
+    ColorComponent,
     AcercaDeComponent,
     ListaDeLibrosComponent,
     EncabezadoComponent,
@@ -30,7 +37,8 @@ import { HeroesModule } from './ModuloHeroes/heroes.module';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    HeroesModule
+    HeroesModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]
