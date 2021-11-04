@@ -9,15 +9,17 @@ import { AppComponent } from './app.component';
 import { AleatorioComponent } from './Componentes/Conectados/aleatorio/aleatorio.component';
 import { ColorComponent } from './Componentes/Conectados/color.component';
 
-import { AcercaDeComponent } from './EjampleNav/acerca-de/acerca-de.component';
-import { ListaDeLibrosComponent } from './EjampleNav/lista-de-libros/lista-de-libros.component';
-import { EncabezadoComponent } from './EjampleNav/encabezado/encabezado.component';
-import { InicioComponent } from './EjampleNav/inicio/inicio.component';
-import { Error404Component } from './EjampleNav/error404/error404.component';
-import { DetallesComponent } from './EjampleNav/detalles/detalles.component';
+import { AcercaDeComponent } from './EjemploNav/acerca-de/acerca-de.component';
+import { ListaDeLibrosComponent } from './EjemploNav/lista-de-libros/lista-de-libros.component';
+import { EncabezadoComponent } from './EjemploNav/encabezado/encabezado.component';
+import { InicioComponent } from './EjemploNav/inicio/inicio.component';
+import { Error404Component } from './EjemploNav/error404/error404.component';
+import { DetallesComponent } from './EjemploNav/detalles/detalles.component';
 
 import { HeroesModule } from './ModuloHeroes/heroes.module';
 import { DbzModule } from './dbz/dbz.module';
+
+import { LibrosseleccionadosService } from './EjemploNav/librosseleccionados.service';
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { DbzModule } from './dbz/dbz.module';
     HeroesModule,
     DbzModule
   ],
-  providers: [],
+  providers: [
+    LibrosseleccionadosService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
